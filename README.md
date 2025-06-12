@@ -5,7 +5,7 @@ The baseline architecture used is Faster R-CNN with a ResNet-50 backbone. The fe
 
 The model was trained using Google Colab Pro with a TPU v2–8. The results indicate some degree of overfitting. Despite the results, the proposed Slice-Level Attention Module could serve as a foundation for future improvements, such as using more advanced attention mechanisms or training on higher-performance hardware, which would allow to reject the overfitting hypothesis and continue building a more solid foundation from this proposal.
 
-Also it has been developed a way to generate synthetic mammograms from a normalized sigmoid function to weight each slice, which will be combined with a maximum intensity projection (MIP) to generate it. Subsequently, the range of intensities will be modified with different window values and window levels. This can be found in the extraFunctions/SMgenerator.py.
+Also it has been developed a way to generate synthetic mammograms from a normalized sigmoid function to weight each slice, which will be combined with a maximum intensity projection (MIP) to generate it. Subsequently, the range of intensities will be modified with different window values and window levels. This can be found in extraFunctions/SMgenerator.py.
 
 To understand the applicability of this project, a small interface simulating a tomosynthesis viewer has been developed in the Application folder. To use it, it would first be necessary to have the weights obtained from the training of the model and the images of the interface itself. If these are required, do not hesitate to contact me.
 
